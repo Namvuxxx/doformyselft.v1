@@ -27,7 +27,7 @@ public class DepartmentLevel {
     private String approvalLevelName;
 
     @OneToOne
-    @JoinColumn(name = "parent_department_level_code",   referencedColumnName = "code")
+    @JoinColumn(name = "parent_department_level_code", referencedColumnName = "code")
     @JsonIgnore
     private DepartmentLevel parentDepartmentLevel;
 
